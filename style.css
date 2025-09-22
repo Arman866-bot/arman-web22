@@ -15,8 +15,156 @@
                 url('car.png') no-repeat center/cover;
       display: flex;
       flex-direction: column;
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 200px; 
+    height: auto;
+    z-index: 2; 
+}
+
+.navbar{
+    width:90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    font-size: 30px;
+    flex-wrap:wrap;
+}
+
+.menu ul{
+    display: flex;
+    gap: 30px;
+    flex-wrap:wrap;
+}
+.menu ul li{
+  list-style: none;
+}
 
 
+.menu ul li a{
+  text-decoration: none;
+  color: rgb(77, 233, 233);
+  font-weight: bold;
+  transition: 0.4s
+}
+.menu ul li a:hover{
+  color:#ffd166
+  
+}
+.search{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.srch{
+  width: 150px;
+  max-width: 70vw;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #43fff6;
+  color: #f0ebeb;
+  padding: 0 10px;
+  border-radius: 5px 0 0 5px;
+}
 
+.btn{
+  width: 70px;
+  height: 40px;
+  background-color: #43fff6;
+  font-width: bold;
+  border: 2px solid #43fff6;
+  border-radius: 0 5px 5px 0; 
+  color:#fff;
+  cursor:pointer ;  
+  transition: 0.4s;
+}
 
+.btn:hover{
+  background: linear-gradient(90deg,#43fff6,#fff);
+  color: #081323;
+  
+}
+@media (max-width: 1024px) {
+  .main{
+    background-position: center top;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 920px) {
+  .main{
+    background-position: center top;
+    background-size: cover;
+  }
+  .search .scrh{
+    width: 50%;
+  }
+  .btn{
+    width: 40%;
+  }
+}
+@media (max-width:768px) {
+  .main{
+    background-position: center top;
+    background-attachment: scroll;
+  }
+  .navbar{
+    fkex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .menu ul{
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+  .search{
+    width: 100%;
+    justify-content: flex-start;
+
+  }
+  .srch{
+    width: 70%;
+
+}
+.btn{
+  width: 25%;
+}
+}
+@media (max-width: 480px) {
+  .logo{
+    width: 150px; 
+    height: auto;
+  }
+  .menu ul{
+    gap: 10px;
+  }
+  .menu ul li a{
+    font-size: 14px;
+  }
+  .search{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+  .srch{
+    width: 100%;
+  }
+  .btn{
+    width: 100%;
+  }
+}
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #43fff6;
 }
