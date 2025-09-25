@@ -4,38 +4,60 @@
     <title>Team Arion</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="link rel="preconnect href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" class="stylesheet">
 </head>
 <body>
     <div class="main">
-        <div class="navbar">
-            <div class="icon"></div>
-               <img src="logo.png" alt="Logo" class="logo">
-               
-               <div class="menu">
-                    <ul>   
-                    <li><a href="#">Home</a></li>  
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Sponsors</a></li>
-                    <li><a href="#">About Us</a></li>         
-                    <li><a href="#">Contact Us</a></li>
-                    </ul>
-                <div>
-                        
-                </div>
-                    <input type="search" class="srch" placeholder="Type To search">
-                    <button class="btn">Search</button>                                        
-                </div>
-            </div>
-        </div>    
+         <nav class="navbar">
+            <img src="logo.png" alt="Logo" class="logo">
 
-        <div class="content">
-            <div class="text-section">
-                <h1>Team Arion</h1>
-                <h1>We Build, We Race</h1>
-                <p class="par">Team Arion is the official Formula Student racing team from Nitte Institute of Technology, driven by passion, precision, and performance. Dedicated to designing, engineering, and building high-performance race cars, the team proudly competes at SUPRA SAEINDIA, one of India’s premier student motorsport competitions. With a blend of innovation, teamwork, and technical excellence, Team Arion represents the spirit of future mobility and the relentless pursuit of speed.
-                </p>
+            <div class="menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Team</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Sponsors</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact Us</a></li>
+                </ul>
             </div>
-        </div>
+            <div class="social">
+                <a href="https://www.facebook.com/" class="nav__social-link" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/" class="nav__social-link" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/" class="nav__social-link" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                
+            </div>
+        </nav>  
+          
+        <section class="home section" id="home">
+            <div class="home__container">
+                <div class="home__data">
+                    <h1 class="home__tittle">TEAM ARION <br> WE BUILD <br> WE RACE</h1>
+                    <p class="home__dsicription">Team Arion is the official Formula Student racing team from Nitte Institute of Technology,
+                         driven by passion, precision, and performance. Dedicated to designing, engineering, and building high-performance race cars,
+                          the team proudly competes at SUPRA SAEINDIA, one of India's premier student motorsport competitions. With a blend of innovation,
+                           teamwork, and technical excellence, Team Arion represents the spirit of future mobility and the relentless pursuit of speed.</p>
+                    <img src="outline.png" alt="image" class="home__car">
+                </div>
+                <div class="home__images">
+                    <div class="home__circle">
+                        <div class="home__subcircle"></div>
+                    </div>
+                    <img src="car.png" alt="image" class="i1">
+                    <img src="tire.png" alt="image" class="i2">
+                    <img src="tire.png" alt="image" class="i3">
+                    <img src="traffic.png" alt="image" class="i4">
+                </div>
+                
+            </div>
+        </section>
     </div>    
 </body>
 </html>
